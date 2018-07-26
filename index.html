@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Veeno | Slider</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.css">
+  <style>
+    .padd {
+      padding: 1.5rem .5rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" style="max-width: 70%; margin: 0 auto; padding-top: 3rem;">
+    <div class="padd">
+      <veeno :handles="110" tooltips
+      :range = "{ 'min': 100, 'max': 350 }"
+      :pipsy = "{mode: 'range', density: 5}"
+      ></veeno>
+    </div>
+    <div class="padd">
+      <veeno :handles="[120, 200]" tooltips
+      :range = "{ 'min': 100, 'max': 350 }"
+      behaviour="drag-fixed"
+      connect
+      :pipsy = "{mode: 'range', density: 5}"
+      ></veeno>
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.js"></script>
+  <!-- <script src="https://unpkg.com/veeno@0.0.4/dist/veeno.min.js"></script> -->
+  <script src="./dist/veeno.min.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+    })
+  </script>
+</body>
+</html>
