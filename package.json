@@ -5,7 +5,7 @@
   "keywords": [
     "vue",
     "slider",
-    "ranger",
+    "range",
     "vue-slider",
     "vue-range-slider",
     "vue-component",
@@ -15,11 +15,10 @@
   "main": "dist/veeno.umd.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NightCatSama/vue-slider-component.git"
+    "url": "https://github.com/Lahori-Jawan/veeno"
   },
   "author": "Nasir Khan <virgodgreat@gmail.com>",
-  "licenses": "MIT",
-  "homepage": "https://github.com/NightCatSama/vue-slider-component#readme",
+  "homepage": "http://veeno.surge.sh/",
   "module": "dist/veeno.esm.js",
   "unpkg": "dist/veeno.min.js",
   "browser": {
